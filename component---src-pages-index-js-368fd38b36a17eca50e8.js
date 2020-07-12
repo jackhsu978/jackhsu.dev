@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{RXBc:function(e,t,n){"use strict";n.r(t);var l=n("q1tI"),a=n.n(l),c=n("Bl7J"),r=n("vrFN");t.default=function(){return a.a.createElement(c.a,null,a.a.createElement(r.a,{title:"Home"}),a.a.createElement("h1",null,"Welcome to Jack's personal site"),a.a.createElement("p",null,a.a.createElement("i",null,"My site is still under construction.")))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-368fd38b36a17eca50e8.js.map
