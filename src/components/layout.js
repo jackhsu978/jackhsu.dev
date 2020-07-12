@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Divider } from "gestalt"
 
 import Header from "./header"
 import "./layout.css"
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <Divider />
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
