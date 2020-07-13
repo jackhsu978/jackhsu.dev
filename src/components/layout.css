@@ -1,11 +1,17 @@
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--gestalt-colorGray0);
+  color: var(--gestalt-colorGray300);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--gestalt-colorGray300);
 }
