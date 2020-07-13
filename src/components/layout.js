@@ -8,11 +8,25 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Container, Divider, GestaltProvider, Link, Row, Text } from "gestalt"
+import { Box, Container, Divider, GestaltProvider } from "gestalt"
 import Header from "./header"
+import Footer from "./footer"
 
 import "./layout.css"
 import "gestalt/dist/gestalt-future.css"
+
+const GUTTER = 2
+
+const FullWidth = ({ children }) => (
+  <Box marginStart={-GUTTER} marginEnd={-2}>
+    {children}
+  </Box>
+)
+const FullWidthDivider = () => (
+  <FullWidth>
+    <Divider />
+  </FullWidth>
+)
 
 const Layout = ({ children }) => {
   const [colorScheme, setColorScheme] = useState("light")
@@ -28,31 +42,22 @@ const Layout = ({ children }) => {
 
   return (
     <GestaltProvider colorScheme={colorScheme}>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        onToggleColorScheme={() =>
-          setColorScheme(colorScheme === "light" ? "dark" : "light")
-        }
-      />
-      <Divider />
-      <Container>
-        <main>{children}</main>
-        <Divider />
-        <footer>
-          <Row paddingY={4}>
-            <Text>
-              © {new Date().getFullYear()}, Built with{" "}
-              <Link inline href="https://www.gatsbyjs.org">
-                <Text weight="bold">Gatsby</Text>
-              </Link>{" "}
-              and{" "}
-              <Link inline href="https://gestalt.netlify.app">
-                <Text weight="bold">Gestalt</Text>
-              </Link>
-            </Text>
-          </Row>
-        </footer>
-      </Container>
+      <Box paddingX={GUTTER} paddingY={2}>
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          onToggleColorScheme={() =>
+            setColorScheme(colorScheme === "light" ? "dark" : "light")
+          }
+        />
+        <Container>
+          <FullWidthDivider />
+          <main>
+            <Box padding={2}>{children}</Box>
+          </main>
+          <FullWidthDivider />
+          <Footer />
+        </Container>
+      </Box>
     </GestaltProvider>
   )
 }

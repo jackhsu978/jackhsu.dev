@@ -5,7 +5,7 @@ import { Avatar, Box, Container, IconButton, Row, Heading } from "gestalt"
 import avatar from "./avatar.png"
 
 const Header = ({ siteTitle, onToggleColorScheme }) => (
-  <Box paddingY={4}>
+  <Box paddingY={2}>
     <Container>
       <Row justifyContent="between">
         <Heading size="lg">

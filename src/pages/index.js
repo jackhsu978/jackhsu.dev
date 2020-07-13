@@ -1,5 +1,5 @@
 import React from "react"
-import { Text } from "gestalt"
+import { Box, Text } from "gestalt"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,9 +8,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <p>
+      <Box>
         <Text italic>under construction.</Text>
-      </p>
+      </Box>
     </Layout>
   )
 }
