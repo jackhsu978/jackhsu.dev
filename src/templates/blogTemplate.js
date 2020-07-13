@@ -3,7 +3,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Box, Heading, Icon, Row, Stack, Text } from "gestalt"
+import { Box, Heading, Icon, Row, Text } from "gestalt"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -24,7 +24,7 @@ export default function Template({
           <Text>{frontmatter.title}</Text>
         </Box>
       </Row>
-      <Stack gap={1}>
+      <Box width="100%">
         <Box>
           <Heading accessibilityLevel={1} size="lg">
             {frontmatter.title}
@@ -33,11 +33,8 @@ export default function Template({
             {frontmatter.date}
           </Heading>
         </Box>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </Stack>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </Box>
     </Layout>
   )
 }
