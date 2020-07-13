@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Jack's Personal Site`,
-    description: `Jack Hsu's personal site`,
+    title: `Jack Hsu`,
+    description: `Jack Hsu's personal website`,
     author: `@jackhsu978`,
   },
   plugins: [
@@ -21,10 +21,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#030303`,
+        theme_color: `#030303`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

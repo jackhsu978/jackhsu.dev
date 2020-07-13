@@ -5,15 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Divider } from "gestalt"
-
+import { Container, Divider, GestaltProvider, Link, Row, Text } from "gestalt"
 import Header from "./header"
+
 import "./layout.css"
+import "gestalt/dist/gestalt-future.css"
 
 const Layout = ({ children }) => {
+  const [colorScheme, setColorScheme] = useState("light")
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,24 +27,33 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+    <GestaltProvider colorScheme={colorScheme}>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        onToggleColorScheme={() =>
+          setColorScheme(colorScheme === "light" ? "dark" : "light")
+        }
+      />
+      <Divider />
+      <Container>
         <main>{children}</main>
         <Divider />
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Row paddingY={4}>
+            <Text>
+              © {new Date().getFullYear()}, Built with{" "}
+              <Link inline href="https://www.gatsbyjs.org">
+                <Text weight="bold">Gatsby</Text>
+              </Link>{" "}
+              and{" "}
+              <Link inline href="https://gestalt.netlify.app">
+                <Text weight="bold">Gestalt</Text>
+              </Link>
+            </Text>
+          </Row>
         </footer>
-      </div>
-    </>
+      </Container>
+    </GestaltProvider>
   )
 }
 

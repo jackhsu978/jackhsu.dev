@@ -1,16 +1,18 @@
 import React from "react"
+import { Text } from "gestalt"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Welcome to Jack's personal site</h1>
-    <p>
-      <i>My site is still under construction.</i>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <p>
+        <Text italic>under construction.</Text>
+      </p>
+    </Layout>
+  )
+}
 
 export default IndexPage
