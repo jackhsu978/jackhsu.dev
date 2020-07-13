@@ -2,7 +2,7 @@
 slug: "/blog/xue-hua-piao-piao"
 date: "2020-07-13"
 title: "Xue Hua Piao Piao"
-spoiler: "I made a cover song with the virtual singer AiKO"
+spoiler: "I made a cover song with the virtual singer and my four-year-old daughter."
 ---
 
 I did a cover song for the [_A Spray of Plum Blossoms_](https://en.wikipedia.org/wiki/A_Spray_of_Plum_Blossoms) (_一剪梅_). The song is also as known, or better known, as [Xue Hua Piao Piao Bei Feng Xiao Xiao](https://www.urbandictionary.com/define.php?term=xue%20hua%20piao%20piao%20bei%20feng%20xiao%20xiao). It has become one of the latest Internet memes.
@@ -17,7 +17,7 @@ I did a cover song for the [_A Spray of Plum Blossoms_](https://en.wikipedia.org
 
 ## Concept
 
-I use this forever-16 virtual singer called [AiKO](https://synthv.fandom.com/wiki/AiKO), who is basically the same as [Hatsune Miku](https://en.wikipedia.org/wiki/Hatsune_Miku) (初音) except that AiKO sings in Chinese. I bought the [AiKO sound library](https://www.anicute.com/product/8d45e4f7-58c7-455f-b0ab-d280524021f1) for USD \$60.
+I use this virtual singer called [AiKO](https://synthv.fandom.com/wiki/AiKO), who is basically the same as [Hatsune Miku](https://en.wikipedia.org/wiki/Hatsune_Miku) (初音) except that AiKO sings in Chinese. I bought the [AiKO sound library](https://www.anicute.com/product/8d45e4f7-58c7-455f-b0ab-d280524021f1) for USD \$60.
 
 ![AiKO](./aiko.png)
 
@@ -32,7 +32,7 @@ Here is a brief summary of how I produced this song.
 ### Music
 
 1. Googled and downloaded a [instrument MIDI](https://www.midishow.com/tool/mididy?id=42526) for this song. Import the MIDI file (`.mid` file) to Logic Pro.
-1. Changed the temp from 70 bpm (beats per minute) to 90 bpm because I wanted the song to go faster
+1. Changed the temp from 70 bpm (beats per minute) to 90 bpm because I wanted the song to be more exciting.
 1. Changed and the key from A♭m to E♭m so that it is more suitable for a female singer.
 1. Edited the drum track because I found it too busy in the original song/MIDI.
 1. Exported the melody track from Logic Pro to a MIDI file, and imported it to [Synthesizer V](https://dreamtonics.com/synthesizerv-gen1/en/).
@@ -42,11 +42,11 @@ Here is a brief summary of how I produced this song.
 1. I wrote some Chinese rap lyrics based on the original lyrics, and did some simple rap.
 1. My wife and I taught our daughter the magic phrase "Xue Hua Piao Piao Bei Feng Xiao Xiao" and I recorded her "rap".
 1. Did some simple EQ, compression, and reverb. Use loudness meter to make sure that the final audio is never too loud.
-1. Bounced all the tracks in Logic Pro into one `.mp3` file.
+1. Finally, bounced all the tracks in Logic Pro into one `.mp3` file.
 
 ### Video
 
-1. Imported the `.mp3` file to Final Cut Pro.
-1. Imported the images (background image is from https://unsplash.com/).
+1. Imported the `.mp3` audio file to Final Cut Pro.
+1. Imported background images (the snow photo is from [upsplash](https://unsplash.com/)).
 1. Typed the lyrics and credits.
 1. Finally, exported the video and uploaded to YouTube.
