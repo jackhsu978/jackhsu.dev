@@ -5,7 +5,7 @@ title: "Xue Hua Piao Piao"
 spoiler: "I made a cover song with the virtual singer and my four-year-old daughter."
 ---
 
-I did a cover song for the [_A Spray of Plum Blossoms_](https://en.wikipedia.org/wiki/A_Spray_of_Plum_Blossoms) (_一剪梅_). The song is also as known, or better known, as [Xue Hua Piao Piao Bei Feng Xiao Xiao](https://www.urbandictionary.com/define.php?term=xue%20hua%20piao%20piao%20bei%20feng%20xiao%20xiao). It has become one of the latest Internet memes.
+I did a cover version of [_A Spray of Plum Blossoms_](https://en.wikipedia.org/wiki/A_Spray_of_Plum_Blossoms) (_一剪梅_), which is perhaps better known as [Xue Hua Piao Piao Bei Feng Xiao Xiao](https://www.urbandictionary.com/define.php?term=xue%20hua%20piao%20piao%20bei%20feng%20xiao%20xiao).
 
 `youtube:https://www.youtube.com/embed/CsuBcQ8uACo`
 
@@ -31,22 +31,20 @@ Here is a brief summary of how I produced this song.
 
 ### Music
 
-1. Googled and downloaded a [instrument MIDI](https://www.midishow.com/tool/mididy?id=42526) for this song. Import the MIDI file (`.mid` file) to Logic Pro.
-1. Changed the temp from 70 bpm (beats per minute) to 90 bpm because I wanted the song to be more exciting.
-1. Changed and the key from A♭m to E♭m so that it is more suitable for a female singer.
-1. Edited the drum track because I found it too busy in the original song/MIDI.
-1. Exported the melody track from Logic Pro to a MIDI file, and imported it to [Synthesizer V](https://dreamtonics.com/synthesizerv-gen1/en/).
-1. Loaded up [AiKO sound library](https://www.anicute.com/product/8d45e4f7-58c7-455f-b0ab-d280524021f1) in Synthesizer V, and enter lyrics word-by-word for each note.
-1. Make vibrato with Synthesizer V pitch editor. Vibrato is used a lot in this song.
-1. Render the AiKO's vocal to an audio file (`.wav` file) and import it to Logic Pro. Now we have instruments and vocal.
-1. I wrote some Chinese rap lyrics based on the original lyrics, and did some simple rap.
-1. My wife and I taught our daughter the magic phrase "Xue Hua Piao Piao Bei Feng Xiao Xiao" and I recorded her "rap".
-1. Did some simple EQ, compression, and reverb. Use loudness meter to make sure that the final audio is never too loud.
-1. Finally, bounced all the tracks in Logic Pro into one `.mp3` file.
+1. Get a [instrument MIDI](https://www.midishow.com/tool/mididy?id=42526) online and import it to my DAW -- Logic Pro.
+1. Speed up the tempo (70 bpm => 90 bpm) and change and the key (A♭m => E♭m).
+1. Edit the drum track as the original drum is too busy for my taste.
+1. Export the melody instrument MIDI track and import it to [Synthesizer V](https://dreamtonics.com/synthesizerv-gen1/en/).
+1. Load up [AiKO sound library](https://www.anicute.com/product/8d45e4f7-58c7-455f-b0ab-d280524021f1) in Synthesizer V, and enter the lyrics.
+1. Create vibrato with Synthesizer V pitch editor. Vibrato is used a lot in this song.
+1. Render the AiKO's vocal to an audio file (`.wav` file) and import it to Logic Pro.
+1. Record my rap and my dauther's rap and add them to the project.
+1. Add effects like reverb, EQ, and compression.
+1. Finally, bounce all the tracks in Logic Pro into one `.mp3` file.
 
 ### Video
 
-1. Imported the `.mp3` audio file to Final Cut Pro.
-1. Imported background images (the snow photo is from [upsplash](https://unsplash.com/)).
-1. Typed the lyrics and credits.
-1. Finally, exported the video and uploaded to YouTube.
+1. Import the `.mp3` audio file to Final Cut Pro.
+1. Import background images (the snow photo is from [upsplash](https://unsplash.com/)).
+1. Enter lyrics and credits.
+1. Finally, export the music video!
