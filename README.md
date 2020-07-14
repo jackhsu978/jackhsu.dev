@@ -1,4 +1,3 @@
-jackhsu978.github.io
-====================
+# jackhsu.dev
 
-Jack's Personal Site
+https://jackhsu.dev built with [Gatsby](https://www.gatsbyjs.org/)
