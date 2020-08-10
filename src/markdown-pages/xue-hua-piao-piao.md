@@ -7,7 +7,7 @@ spoiler: "I made a cover song with the virtual singer and my four-year-old daugh
 
 I did a cover version of [_A Spray of Plum Blossoms_](https://en.wikipedia.org/wiki/A_Spray_of_Plum_Blossoms) (_一剪梅_), which is perhaps better known as [Xue Hua Piao Piao Bei Feng Xiao Xiao](https://www.urbandictionary.com/define.php?term=xue%20hua%20piao%20piao%20bei%20feng%20xiao%20xiao).
 
-`youtube:https://www.youtube.com/embed/CsuBcQ8uACo`
+https://youtu.be/CsuBcQ8uACo
 
 ## Motivation
 
