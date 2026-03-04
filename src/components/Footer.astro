@@ -1,0 +1,27 @@
+---
+const socialLinks = [
+  { href: "https://github.com/jackhsu978", label: "GitHub" },
+];
+---
+
+<footer class="border-t border-zinc-200 dark:border-zinc-800">
+  <div class="mx-auto flex max-w-3xl items-center justify-between px-6 py-6">
+    <p class="text-sm text-zinc-500 dark:text-zinc-400">
+      &copy; {new Date().getFullYear()} Jack Hsu
+    </p>
+    <div class="flex gap-4">
+      {
+        socialLinks.map((link) => (
+          <a
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</footer>

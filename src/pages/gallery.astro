@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GalleryGrid from "../components/GalleryGrid.astro";
+import { galleryItems } from "../data/gallery";
+---
+
+<BaseLayout title="Gallery - Jack Hsu" description="Drawings and visual work by Jack Hsu">
+  <h1 class="text-3xl font-bold tracking-tight">🎨 Gallery</h1>
+  <p class="mt-2 text-zinc-600 dark:text-zinc-400">
+    Drawings and visual work.
+  </p>
+  <div class="mt-8">
+    <GalleryGrid items={galleryItems} />
+  </div>
+</BaseLayout>

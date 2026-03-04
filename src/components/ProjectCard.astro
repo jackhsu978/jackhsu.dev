@@ -1,0 +1,42 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  url?: string;
+  repo?: string;
+}
+
+const { title, description, tags, url, repo } = Astro.props;
+---
+
+<div
+  class="rounded-xl border border-zinc-200 p-6 dark:border-zinc-800 transition-colors hover:border-zinc-300 dark:hover:border-zinc-700"
+>
+  <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+    {
+      (url || repo) ? (
+        <a
+          href={url || repo}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="underline underline-offset-2 hover:text-zinc-600 dark:hover:text-zinc-400"
+        >
+          {title}
+        </a>
+      ) : (
+        title
+      )
+    }
+  </h3>
+  <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-400" set:html={description} />
+  <div class="mt-3 flex flex-wrap gap-2">
+    {
+      tags.map((tag) => (
+        <span class="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">
+          {tag}
+        </span>
+      ))
+    }
+  </div>
+</div>
