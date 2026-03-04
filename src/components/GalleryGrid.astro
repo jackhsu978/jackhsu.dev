@@ -13,7 +13,7 @@ const { items } = Astro.props;
     items.map((item) => (
       <button
         class:list={[
-          "gallery-item group relative block w-full cursor-pointer overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 transition-colors hover:border-zinc-300 dark:hover:border-zinc-700",
+          "gallery-item group relative block w-full cursor-pointer overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 transition-colors hover:border-zinc-300",
           item.wide && "sm:col-span-2",
         ]}
         data-src={item.src}

@@ -19,7 +19,7 @@ export const contributions: Project[] = [
   {
     title: "🔄 flow-to-typescript-codemod",
     description:
-      'Contributed improvements to Stripe\'s Flow-to-TypeScript codemod as part of <a href="https://medium.com/pinterest-engineering/migrating-3-7-million-lines-of-flow-code-to-typescript-8a836c88fea5" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-zinc-900 dark:hover:text-zinc-100">migrating Pinterest\'s 3.7M-line web codebase</a>. Added support for indexed access types, fixed intersection type bugs, and improved React type conversions.',
+      'Contributed improvements to Stripe\'s Flow-to-TypeScript codemod as part of <a href="https://medium.com/pinterest-engineering/migrating-3-7-million-lines-of-flow-code-to-typescript-8a836c88fea5" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 hover:text-zinc-900">migrating Pinterest\'s 3.7M-line web codebase</a>. Added support for indexed access types, fixed intersection type bugs, and improved React type conversions.',
     tags: ["TypeScript", "Flow", "Codemod"],
     repo: "https://github.com/stripe-archive/flow-to-typescript-codemod/pull/7",
   },
