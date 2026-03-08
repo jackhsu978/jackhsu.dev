@@ -52,48 +52,52 @@ const { items } = Astro.props;
 </div>
 
 <script is:inline>
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
-  const lightboxTitle = document.getElementById("lightbox-title");
-  const items = Array.from(document.querySelectorAll(".gallery-item"));
-  let currentIndex = 0;
+  document.addEventListener("astro:page-load", () => {
+    const lightbox = document.getElementById("lightbox");
+    if (!lightbox) return;
 
-  function showItem(index) {
-    currentIndex = index;
-    lightboxImg.src = items[index].dataset.src;
-    lightboxImg.alt = items[index].dataset.title;
-    lightboxTitle.textContent = items[index].dataset.title;
-  }
+    const lightboxImg = document.getElementById("lightbox-img");
+    const lightboxTitle = document.getElementById("lightbox-title");
+    const items = Array.from(document.querySelectorAll(".gallery-item"));
+    let currentIndex = 0;
 
-  function openLightbox(index) {
-    showItem(index);
-    lightbox.classList.remove("hidden");
-    lightbox.classList.add("flex");
-  }
-
-  function closeLightbox() {
-    lightbox.classList.add("hidden");
-    lightbox.classList.remove("flex");
-  }
-
-  items.forEach((item, i) => {
-    item.addEventListener("click", () => openLightbox(i));
-  });
-
-  document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
-
-  lightbox.addEventListener("click", (e) => {
-    if (e.target === lightbox) closeLightbox();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (lightbox.classList.contains("hidden")) return;
-    if (e.key === "Escape") closeLightbox();
-    if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
-      showItem((currentIndex - 1 + items.length) % items.length);
+    function showItem(index) {
+      currentIndex = index;
+      lightboxImg.src = items[index].dataset.src;
+      lightboxImg.alt = items[index].dataset.title;
+      lightboxTitle.textContent = items[index].dataset.title;
     }
-    if (e.key === "ArrowRight" || e.key === "ArrowDown") {
-      showItem((currentIndex + 1) % items.length);
+
+    function openLightbox(index) {
+      showItem(index);
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
     }
+
+    function closeLightbox() {
+      lightbox.classList.add("hidden");
+      lightbox.classList.remove("flex");
+    }
+
+    items.forEach((item, i) => {
+      item.addEventListener("click", () => openLightbox(i));
+    });
+
+    document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (lightbox.classList.contains("hidden")) return;
+      if (e.key === "Escape") closeLightbox();
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        showItem((currentIndex - 1 + items.length) % items.length);
+      }
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        showItem((currentIndex + 1) % items.length);
+      }
+    });
   });
 </script>
