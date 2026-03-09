@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@custom-variant dark {
+  &:where(.dark, .dark *) {
+    @slot;
+  }
+  @media (prefers-color-scheme: dark) {
+    &:where(:not(.light *)) {
+      @slot;
+    }
+  }
+}
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
