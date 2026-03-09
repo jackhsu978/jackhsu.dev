@@ -7,13 +7,16 @@ const navLinks = [
 ];
 
 const currentPath = Astro.url.pathname;
+const isHome = currentPath === "/";
 ---
 
 <header class="border-b border-zinc-200 dark:border-zinc-700">
   <nav class="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
-    <a href="/" class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
-      Jack Hsu
-    </a>
+    {isHome ? <div /> : (
+      <a href="/" class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+        Jack Hsu
+      </a>
+    )}
     <div class="flex items-center gap-1">
       {
         navLinks.map((link) => (
