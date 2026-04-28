@@ -13,6 +13,12 @@ export const projects: Project[] = [
     tags: ["Next.js", "React", "TypeScript"],
     url: "https://www.genkidesuka.app",
   },
+  {
+    title: "🥊 Huntrix Fighter",
+    description: "A simple Street Fighter style fighting game on the web.",
+    tags: ["Web Game", "Phaser", "TypeScript"],
+    url: "https://huntrixfighter.app/",
+  },
 ];
 
 export const contributions: Project[] = [
