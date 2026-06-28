@@ -8,6 +8,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "🎮 Super Codex",
+    description:
+      "A retro web platformer with four courses, coins, prism stars, firebars, shells, and a finish banner.",
+    tags: ["Web Game", "Platformer", "JavaScript"],
+    url: "https://super-codex.com/",
+  },
+  {
     title: "🇯🇵 Genki Desu Ka",
     description: "A Japanese language learning webapp for learning and practicing basic vocabulary.",
     tags: ["Next.js", "React", "TypeScript"],
